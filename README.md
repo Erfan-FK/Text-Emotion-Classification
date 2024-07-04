@@ -37,7 +37,6 @@ Implementation: [MultinomialNB.py](models/MultinomialNB.py)
 #### 2. Logistic Regression
 - **Sigmoid Function:** $$\\sigma(z) = \frac{1}{1 + e^{-z}}\$$
 - **Logistic Regression Model:** $$y = \sigma(\mathbf{w}^T \mathbf{x} + b)\$$
-- **Loss Function (Binary Cross-Entropy):** $$L(y, \hat{y}) = -\frac{1}{m} \sum_{i=1}^m \left[ y_i \log(\hat{y}_i) + (1 - y_i) \log(1 - \hat{y}_i) \right]\$$
 
 Implementation: [LogisticRegression.py](models/LogisticRegression.py)
 
