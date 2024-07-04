@@ -28,7 +28,6 @@ The dataset used in this project is sourced from Kaggle and contains 40,000 text
 ## Model Training and Algorithms
 ### Machine Learning Models
 #### 1. Multinomial Naive Bayes
-Mathematical formulas:
 - **Class Prior:** $$\\log P(c) = \log \frac{\text{count}(c)}{N}\$$
 - **Feature Log Probabilities:** $$\\log P(x_i|c) = \log \frac{\text{count}(x_i, c) + \alpha}{\sum_j (\text{count}(x_j, c) + \alpha)}\$$
 - **Prediction:** $$\\hat{y} = \arg\max_c \left( \log P(c) + \sum_i x_i \log P(x_i|c) \right)\$$
@@ -36,7 +35,6 @@ Mathematical formulas:
 Implementation: [MultinomialNB.py](models/MultinomialNB.py)
 
 #### 2. Logistic Regression
-Mathematical formulas:
 - **Sigmoid Function:** $$\\sigma(z) = \frac{1}{1 + e^{-z}}\$$
 - **Logistic Regression Model:** $$y = \sigma(\mathbf{w}^T \mathbf{x} + b)\$$
 - **Loss Function (Binary Cross-Entropy):** $$L(y, \hat{y}) = -\frac{1}{m} \sum_{i=1}^m \left[ y_i \log(\hat{y}_i) + (1 - y_i) \log(1 - \hat{y}_i) \right]\$$
